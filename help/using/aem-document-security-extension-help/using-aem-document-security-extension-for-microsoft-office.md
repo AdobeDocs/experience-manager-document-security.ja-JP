@@ -4,10 +4,10 @@ description: AEM Document Security Extension for Microsoft Office の使用
 uuid: 8d98a355-df25-4d8e-ae76-a63a93f280c4
 contentOwner: dhv
 discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
-source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
+source-git-commit: 8a10fb9fa24409b695fdaf1431228c6281bf78c3
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 100%
+source-wordcount: '121'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >[AEM Document Security Extension for Microsoft Office の紹介](../document-security-extension-microsoft-office.md) {#introduction-to-aem-document-security-extension-for-microsoft-office}
 >
->Document Security Extension for Microsoft Office を使用することで、Microsoft Office ファイルに事前定義済みの機密設定を適用できます。
+>Microsoft Office 用 Document Security 拡張機能を使用すると、Microsoft Office ファイルに事前定義済みの機密設定を適用できます。
 
 >[!NOTE]
 >
