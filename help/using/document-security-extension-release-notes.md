@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
-source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
+source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 73%
 
 ---
 
@@ -21,17 +21,21 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->この記事では、「Adobe Experience Manager Document Security for Microsoft Office」、「Adobe Experience Manager Document Security Extension for Microsoft Office」、「Document Security Extension for Microsoft Office」の各用語を同じ意味で使用します。
+>このドキュメントでは、次の用語が互換的に使用されています。
+>
+>* Microsoft Office 用Adobe Experience Manager Document Security
+>* Adobe Experience Manager Document Security Extension for Microsoft Office
+>* Microsoft Office 用 Document Security 拡張機能
 
 ## AEM Document Security Extension for Microsoft Office のインストールと設定 {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 本バージョンの Document Security Extension for Microsoft Office は、Adobe LiveCycle Rights Management ES2 以降、および AEM Forms 向け Document Security アドオンと互換性があります。
 
-AEM Document Security Extension for Microsoft Office をインストールする前に、本書の情報をお読みください。詳細なインストール手順については、[AEM Document Security Extension for Microsoft Office のインストールと設定方法](installing-configuring-aemdsext.md)の記事を参照してください。
+AEM Document Security Extension for Microsoft Office をインストールする前に、本書の情報をお読みください。インストール手順について詳しくは、[AEM Document Security Extension for Microsoft Office のインストールと設定 ](installing-configuring-aemdsext.md) を参照してください。
 
 ## 修正された問題 {#fixed-issues}
 
-* 文字列が縦に表示されて、改行が誤った位置に追加される。（参照番号 CQ-4201054）
+* 文字列が縦に表示されて、改行が誤った位置に追加される。（CQ-4201054）
 
 ## 既知の問題 {#known-issues}
 
@@ -72,7 +76,7 @@ Microsoft Office で保護セッションを使用している間は、次のオ
 
 ### 保護されたドキュメントを SharePoint Server から開けない {#opening-a-protected-document-from-sharepoint-server}
 
-保護されたドキュメントを開く：ファイルタイプに関連付けられている Microsoft Office プログラム（Microsoft Word、Microsoft Excel、Microsoft PowerPoint など）を先に開かずに、Document Security Extension for Microsoft Office で保護されたドキュメントを SharePoint Server から開こうとすると、ドキュメントが開かれない場合があります。該当するプラグインをインストールする必要があることを示すエラーメッセージが表示されます。したがって、Document Security Extension for Microsoft Office で保護されたドキュメントを SharePoint Server から開く前に、関連付けられている Microsoft Office プログラムを開くことをお勧めします。
+保護されたドキュメントをSharePoint Server からMicrosoft Office 用 Document Security 拡張機能で開くには、まず、関連するMicrosoft Office プログラム（Word、Excel または PowerPoint）を開きます。開くと、ドキュメントが開かないことがあります。 該当するプラグインをインストールする必要があることを示すエラーメッセージが表示されます。したがって、Document Security Extension for Microsoft Office で保護されたドキュメントを SharePoint Server から開く前に、関連付けられている Microsoft Office プログラムを開くことをお勧めします。
 
 （オプション）Document Security Extension for Microsoft Office で保護されたドキュメントを SharePoint Server から開く前に、キャッシュフォルダーを空にすることをお勧めします。
 
@@ -80,7 +84,7 @@ Microsoft Office で保護セッションを使用している間は、次のオ
 
 ### プリンターがインストールされていない場合に、Excel 2013、2016、2019 ファイルに対して動的な透かしのポリシーを適用する {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
-プリンターがインストールされていないコンピューターで動的な透かし付きのポリシーを Excel 2013、2016 または 2019 ファイルに適用し、そのファイルを保存すると、「動的透かしを適用する際に内部エラーが発生しました」というエラーが表示されます。このエラーは、保護ファイルを再度開くときにも表示されます。透かしは適用されず、表示／ページレイアウトにも表示されません。
+プリンターがインストールされていないコンピューターで動的透かしを含むポリシーを Excel 2013、2016、2019 ファイルに適用すると、「動的透かしを適用する際に内部エラーが発生しました」というエラーが発生します。 このエラーは、保護ファイルを再度開くときにも表示されます。透かしは適用されず、表示／ページレイアウトにも表示されません。
 
 ### サポートされている Office アプリケーションで Windows データ実行防止機能を無効にする {#disable-windows-data-execution-prevention-for-supported-office-applications}
 
@@ -92,7 +96,7 @@ Document Security Extension for Microsoft Office を使用するときは、Wind
 
 ### Document Security Extension for Microsoft Office および McAfee VirusScan がインストールされている PC 上で Office アプリケーションを起動する {#starting-office-applications-on-a-machine-containing-document-security-extension-for-microsoft-office-and-mcafee-virusscan}
 
-Document Security がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効なコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」オプションを無効にしてください。
+Document Security および McAfee VirusScan （On-Access Scan を有効にする）をインストールしたコンピューターで Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console で [Buffer Overflow Protection] オプションを無効にします。
 
 ### サポートされていない Microsoft Office 言語がインストールされている PC に Document Security Extension for Microsoft Office をインストールする {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
@@ -104,7 +108,7 @@ Document Security がインストールされ、McAfee VirusScan の On-Access S
 
 ### Microsoft Officeの体験版はサポート対象外 {#no-support-for-trial-versions-of-microsoft-office}
 
-AEM Document Security Extension for Microsoft Office は体験版の Microsoft Office をサポートしていません。拡張機能をインストールする前に、ライセンス取得済みの Microsoft Office がインストールされ、ライセンス認証が完了していることを確認してください。
+Document Security Extension for Microsoft Office は、Microsoft Office のトレイルバージョンをサポートしていません。 拡張機能をインストールする前に、Microsoft Office のライセンス済みコピーがインストールされ、アクティベートされていることを確認します。
 
 ### 保護された Microsoft Office ファイルを開けない {#unable-to-open-a-protected-microsoft-office-files}
 
@@ -112,14 +116,14 @@ Microsoft Office の保護ビューが有効の場合、Right Management Extensi
 
 ### 画像や背景色を含む Microsoft Excel 文書のセルが、透かしの上に表示される {#cells-of-microsoft-excel-document-containing-an-image-or-background-color-appear-on-top-of-watermark}
 
-Microsoft Excel 文書のセルに画像が含まれているか、または背景色で塗りつぶされていて、動的透かしポリシーが文書に適用されている場合、セルに埋め込まれた画像や背景色が透かしの上に表示され、透かしが隠れてしまいます。
+Excel ドキュメント内のセルに画像や背景色が設定されていて、動的な透かしが適用されている場合、その画像や色がその透かしを覆います。 このアプローチは、透かしがセル内の画像または背景色でカバーされることを意味します。
 
 ### 複数の証明書に関するユーザビリティの問題 {#usability-issue-with-multiple-certificates}
 
-クライアントマシン上の複数の証明書が存在し、ユーザーが証明書選択ダイアログをキャンセルすると、このダイアログが再び表示され、ユーザーはダイアログを 2 回キャンセルすることになります。
+クライアント・マシン上に複数の証明書が存在し、ユーザーが証明書選択ダイアログ・ボックスをキャンセルすると、ダイアログ・ボックスが再び表示されます。 ユーザーは、ダイアログボックスを 2 回キャンセルする必要があります。
 
 ### 保護されたドキュメントを Microsoft PowerPoint で編集できる {#microsoft-powerpoint-allows-editing-protected-documents}
 
-保護された文書を Microsoft PowerPoint 上で編集しようとすると、「この文書を変更することはできません。変更を保存することはできません」とのメッセージが表示されます。 しかし、メッセージを閉じた後も、引き続きテキストの追加や編集をおこなうことができます。ただし保護された文書に対する変更は保存されません。
+保護された文書を Microsoft PowerPoint 上で編集しようとすると、「この文書を変更することはできません。変更を保存することはできません。」 しかし、メッセージを閉じた後も、引き続きテキストの追加や編集をおこなうことができます。ただし保護された文書に対する変更は保存されません。
 
 上記の動作は、PowerPoint 2013、PowerPoint 2016、および PowerPoint 2019 で発生します。
