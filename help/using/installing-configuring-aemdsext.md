@@ -7,25 +7,25 @@ topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2821'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # AEM Document Security Extension for Microsoft Office のインストールと設定{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
-このドキュメントでは、Adobe Experience Manager Document Security Extension for Microsoft Office のインストールと設定の手順について説明します。
+このドキュメントでは、Adobe Experience Manager Document Security Extension for Microsoft Office のインストールおよび設定手順を詳しく説明します。
 
 このドキュメントには、次のタスクに関する情報が含まれています。
 
 * Document Security Extension for Microsoft Office のインストール
-* LiveCycle Rights Management ES2 以降、または AEM 6.0 Forms 以降の Document Security アドオンをポイントするためのインストーラーの事前設定
-* デフォルトポリシーの自動適用の設定。
+* LiveCycle Rights Management ES2 以降、または AEM 6.0 Forms 以降の Document Security アドオンを指すインストーラーの事前設定
+* デフォルトポリシーの自動適用の設定
 
 ## インストールの前に {#before-you-install}
 
-Document Security 拡張 for Microsoft Office をインストールする前に、以下の事柄を確認または実行してください。
+Document Security Extension for Microsoft Office をインストールする前に、以下の事項を確認または実行します。
 
 * [リリースノート](document-security-extension-release-notes.md)を読んでいる。
 * Microsoft Office のライセンス認証を完了している。ライセンス認証画面は、Microsoft Office アプリケーションを開いても表示されません。
@@ -38,11 +38,11 @@ Document Security 拡張 for Microsoft Office をインストールする前に�
 
 >[!NOTE]
 >
->64 ビット版のオペレーティングシステムに 32 ビット版の Document Security Extension をインストールすることはできますが、この逆はサポートされていません。 64 ビット版の Document Security Extension for Microsoft Office を 32 ビット版のオペレーティングシステムにインストールすることはできません。
+>64 ビット版のオペレーティングシステムに 32 ビット版の Document Security 拡張機能をインストールすることはできますが、この逆はサポートされていません。つまり、64 ビット版の Document Security Extension for Microsoft Office を 32 ビット版のオペレーティングシステムにインストールすることはできません。
 
 ### McAfee VirusScan の無効化 {#disable-mcafee-virusscan}
 
-McAfee VirusScan コンソールで [Buffer Overflow Protection] （バッファオーバーフロー保護）オプションを無効にします。 これにより、Document Security Extension がインストールされたマシンで、Office アプリケーションをスムーズに起動できます。 また、McAfee VirusScan with On-Access Scan が有効になっています。 これらの調整は、起動プロセスを妨げる可能性のある競合を防ぐのに役立ちます。
+McAfee VirusScan コンソールで「Buffer Overflow Protection」オプションを無効にします。これにより、Document Security 拡張機能がインストールされたマシンで Office アプリケーションをスムーズに起動できます。また、McAfee VirusScan with On-Access Scan が有効になります。これらの調整は、起動プロセスを妨げる可能性のある競合の防止に役立ちます。
 
 ### サードパーティ製プラグインをアンインストールする {#uninstall-third-party-plug-ins}
 
@@ -57,7 +57,7 @@ Document Security Extension のインストールに最低限必要なシステ�
 * 32 ビット版または 64 ビット版の Microsoft Windows 7 または Windows 10 英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
   **注：** *Document Security Extension for Microsoft Office は Microsoft Surface シリーズのデバイスでも動作すると想定されます。*
 
-* 32 ビット版または 64 ビット版の Office 2013、2016、2019、および Office 365 の一部としてインストールされたMicrosoft Office デスクトップアプリケーション（英語、フランス語、ドイツ語、日本語、イタリア語、スペイン語、ポルトガル語（ブラジル）、韓国語、中国語（簡体字）または中国語（繁体字）です。
+* 32 ビット版または 64 ビット版の Office 2013、2016、2019 および Office 365 の一部としてインストールされた Microsoft Office デスクトップ用アプリケーションの英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
 
   **メモ**：*AEM Document Security Extension for Microsoft Office は Microsoft Office アプリケーション向けのサードパーティ製プラグインをサポートしていません。この拡張機能はサードパーティプラグインと競合する場合があるため、Document Security Extension for Microsoft Office をインストールする前に、アドビ製以外の Microsoft Office アプリケーション用プラグインをアンインストールする必要があります。サードパーティ製プラグインがインストールされている場合、アドビでは、Document Security Extensions for Microsoft Office アプリケーションのサポートを提供できません。*
 
@@ -73,11 +73,11 @@ Document Security Extension を使用するには、Adobe LiveCycle Rights Manag
 
 [ダウンロードページ](download-installer.md)でインストーラーをダウンロードすることができます。インストーラーの実行可能ファイルを直接カスタマイズすることはできませんが、ソフトウェアを対話形式でインストールすることも、サイレントインストールを実行することもできます。ソフトウェアをインストールするには、管理者として Windows にログインします。
 
-32 ビット版と 64 ビット版の Microsoft Office Excel には、それぞれ別のインストーラーが用意されています。32 ビット版のMicrosoft Office の場合は、DocumentSecurityExtensionforMicrosoftOffice.exe をダウンロードします。 64 ビット版のMicrosoft Office の場合は、DocumentSecurityExtensionforMicrosoftOffice64.exe をダウンロードします。
+32 ビット版と 64 ビット版の Microsoft Office Excel には、それぞれ別のインストーラーが用意されています。32 ビット版 Microsoft Office の場合は、DocumentSecurityExtensionforMicrosoftOffice.exe をダウンロードします。64 ビット版 Microsoft Office の場合は、DocumentSecurityExtensionforMicrosoftOffice64.exe をダウンロードします。
 
 >[!NOTE]
 >
->このドキュメントでは、32 ビットインストーラーファイル（DocumentSecurityExtensionforMicrosoftOffice.exe）を使用して、様々なコマンドとオプションについて説明します。 64 ビット版のMicrosoft Office を使用している場合は、64 ビット版のインストーラーファイル（DocumentSecurityExtensionforMicrosoftOffice64.exe）を使用して、このドキュメントに記載されている操作を実行します。
+>このドキュメントでは、32 ビット版のインストーラーファイル（DocumentSecurityExtensionforMicrosoftOffice.exe）を使用して、各種のコマンドやオプションについて説明します。64 ビット版 Microsoft Office を使用している場合、このドキュメントに記載されている操作を実行するには、64 ビット版のインストーラーファイル（DocumentSecurityExtensionforMicrosoftOffice64.exe）を使用します。
 
 ### 無人モードでのインストール {#install-in-silent-mode}
 
@@ -97,13 +97,13 @@ Document Security Extension を使用するには、Adobe LiveCycle Rights Manag
 
 ## Document Security に接続するためのインストーラーの事前設定 {#preconfiguring-the-installer-to-connect-to-document-security}
 
-LiveCycle または AEM サーバーを指すように Document Security 拡張 を Microsoft Office インストーラー用にあらかじめ設定できます。 これにより、Document Security 拡張 for Microsoft Office をインストールするユーザーは、接続を設定しなくても機能を使用できるようになります。 これにより、ユーザーは設定をしなくても、保護されたドキュメントを開くことができます。ただし、新しいドキュメントについては、特定のサーバーを使用するようにクライアントを設定するまで保護できません。
+Microsoft Office インストーラーが LiveCycle または AEM サーバーを指すように、Microsoft Office 用 Document Security 拡張機能を事前設定できます。これにより、Document Security Extension for Microsoft Office をインストールするユーザーは、接続を設定しなくても機能を使用できます。これにより、ユーザーは設定をしなくても、保護されたドキュメントを開くことができます。ただし、新しいドキュメントについては、特定のサーバーを使用するようにクライアントを設定するまで保護できません。
 
-MSI ファイルを作成し設定する方法を以下の手順で説明します。この MSI ファイルにはレジストリ値が含まれています。 これらの値は、Microsoft Office インストーラーの Document Security Extension を、企業にインストールされているLiveCycleーまたはAEM サーバーに事前設定するために必要です。
+MSI ファイルを作成し設定する方法を以下の手順で説明します。この MSI ファイルにはレジストリ値が含まれています。これらの値は、大規模法人にインストールされている LiveCycle または AEM サーバーを指すように Microsoft Office 用 Document Security 拡張機能のインストーラーを事前設定するのに必要です。
 
 ### インストーラーをカスタマイズするための前提条件 {#prerequisites-for-customizing-the-installer}
 
-インストーラーをカスタマイズするには、Orca データベースエディターを使用します。次の手順では、Orca データベースエディターで MSI インストールファイルのコピーを変更してカスタム MSI ファイルを作成する方法を説明します。Orca は、Windows SDK for Windows Server 2008 および.NET Framework 3.5 の一部として使用できます。
+インストーラーをカスタマイズするには、Orca データベースエディターを使用します。次の手順では、Orca データベースエディターで MSI インストールファイルのコピーを変更してカスタム MSI ファイルを作成する方法を説明します。Orca は、Windows SDK for Windows Server 2008 および .NET Framework 3.5 の一部として使用できます。
 
 <!--
 
@@ -145,7 +145,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
   </tr>
   <tr>
    <td><p><code>APS_SERVER_NAME</code></p> </td>
-   <td><p>あなたの名前表示してください。</p> </td>
+   <td><p>自分の名前を表示します。</p> </td>
    <td><p>デフォルトサーバー</p> </td>
   </tr>
   <tr>
@@ -172,22 +172,22 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 ## デフォルトポリシーの自動適用の設定 {#configuring-automatic-application-of-a-default-policy}
 
-この設定の一環として、デフォルトポリシーの自動適用を設定して、Microsoft Office 用 Document Security 拡張機能が保存されるすべてのドキュメントを保護するようにできます。
+設定の一環として、保存されたすべてのドキュメントが Document Security Extension for Microsoft Office で保護されるように、デフォルトポリシーの自動適用を設定できます。
 
 次のいずれかのオプションを指定できます。
 
 * すべてのドキュメントをデフォルトポリシーで保護する。
-* ユーザーがサーバーに接続できない場合に、保護されていない形式でファイルを保存することをユーザーに許可します。 このような柔軟性があれば、ネットワークとの接続が切断されている間（例えば、飛行機に搭乗している間など）にユーザーがドキュメントを作成している場合にも対応できます。
+* サーバーに接続できない場合は、保護されない形式でユーザーがファイルを保存できるようにする。このような柔軟性があれば、ネットワークとの接続が切断されている間（例えば、飛行機に搭乗している間など）にユーザーがドキュメントを作成している場合にも対応できます。
 
 ポリシー自動適用機能を有効にすると、ドキュメントは次の場合にデフォルトポリシーで保護されます。
 
-* ユーザーは、新しく作成されたドキュメントを編集して保存します
-* A ユーザー 保護されていないドキュメントを編集して保存します
-* ユーザーで、デフォルトのドキュメントで開くアプリケーションが開き、編集して、ドキュメントを保存します
+* 新しく作成したドキュメントをユーザーが編集して保存する場合
+* 保護されていないドキュメントをユーザーが編集して保存する場合
+* ドキュメントをデフォルトの状態で開くアプリケーションをユーザーが起動し、ドキュメントを編集して保存する場合
 
 ### MSI ファイルでのポリシー自動適用機能の設定 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
-開始する前に、この記事で前述したように、LiveCycleーまたはAEM Forms サーバーを指すようにインストーラーを事前設定します。
+操作を開始する前に、この記事で前述したように、LiveCycle サーバーまたは AEM Forms サーバーを指すようにインストーラーを事前設定します。
 
 1. **[!UICONTROL スタート／プログラム／Orca]** をクリックします。
 
@@ -211,7 +211,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>ポリシーは、新しいドキュメントが保存されるときに使用する GUID です。 この値は、自動適用ポリシー機能に適用されます。</p> </td>
+   <td><p>ポリシーは、新しいドキュメントを保存するときに使用する GUID です。この値はポリシー自動適用機能に適用されます。</p> </td>
    <td><p>RM サーバーに表示される 16 進数のポリシー ID</p> </td>
   </tr>
   <tr>
@@ -234,7 +234,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 >[!NOTE]
 >
->`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` オプションは、すべてのドキュメントを強制的に保護せずに保護するよう顧客に促す場合に便利です。 また、このオプションは、ユーザーがネットワークから切断されているときにユーザーがドキュメントを作成したということを知ることができるので便利です。ユーザーによるドキュメントの作成や保存は妨げないようにします。
+>`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` オプションは、ユーザーにすべてのドキュメントを保護するように強制する代わりに、そうするように喚起する場合に便利です。また、このオプションは、ユーザーがネットワークから切断されているときにユーザーがドキュメントを作成したということを知ることができるので便利です。ユーザーによるドキュメントの作成や保存は妨げないようにします。
 
 1. 変更したファイルを、元の MSI ファイルが格納されているのと同じディレクトリに保存します。
 
@@ -244,35 +244,35 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 ## 新しいドキュメントの自動保護の有効化 {#enabling-automatic-protection-of-new-documents}
 
-管理者は、ユーザーが保存したドキュメントを自動的に保護する機能を有効にできます。 Document Security Extension for Microsoft Office のインストールプログラムでポリシー自動適用機能を設定します。
+管理者は、ユーザーが保存するドキュメントを自動的に保護する機能を有効にできます。Document Security Extension for Microsoft Office のインストールプログラムでポリシー自動適用機能を設定します。
 
-自動適用ポリシーが有効になっている場合、ユーザーが保存したすべてのドキュメントはデフォルトのポリシーで保護されます。 この操作は次のような状況で実行します。
+ポリシー自動適用を有効にすると、ユーザーが保存するすべてのドキュメントがデフォルトポリシーで保護されます。この操作は次のような状況で実行します。
 
 * 新規ドキュメントをユーザーが作成し編集して保存するとき
 * 保護されていないドキュメントをユーザーが開き編集して保存するとき
 
-自動適用ポリシーの設定については、[ デフォルトポリシーの自動適用の設定 ](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p) を参照してください。
+ポリシー自動適用の設定について詳しくは、[デフォルトポリシーの自動適用の設定](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)を参照してください。
 
-## リボンを使用しないユーザーインターフェイスを有効にする方法 {#enable-ribbon-less-user-interface}
+## リボンを使用しないユーザーインターフェイスの有効化 {#enable-ribbon-less-user-interface}
 
-リボンを使用しない ユーザー インターフェイスは、Windows レジストリの設定を変更することで有効/無効にすることができます。 レジストリを更新し、リボンを使用しない ユーザー インターフェイスを有効にするには、次の手順を実行します。
+リボンを使用しないユーザーインターフェイスは、Windows レジストリの設定を変更することで有効／無効にすることができます。レジストリを更新し、リボンを使用しないユーザーインターフェイスを有効にするには、次の手順を実行します。
 
-1. Windows レジストリを変更する前に、そのレジストリをバックアップ取ってください。 詳しい手順については、[Windows レジストリを変更する方法](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)を参照してください。
+1. 変更する前に、Windows レジストリのバックアップを作成します。詳しい手順については、[Windows レジストリを変更する方法](https://learn.microsoft.com/ja-jp/troubleshoot/windows-server/performance/windows-registry-advanced-users)を参照してください。
 1. レジストリエディタで、HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 または HKEY_LOCAL_MACHINE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 を開きます。
 1. **「HidePluginUI」**&#x200B;という名前で、新しい Dword（32 ビット）値を作成します。
 
-1. **HidePluginUI** プロパティの値を 1 に設定して、リボンレスのユーザーインターフェイスを有効にします。
+1. リボンを使用しないユーザーインターフェイスを有効にするには、**HidePluginUI** のプロパティ値を 1 に設定します。
 
 1. レジストリエディターを終了します。
 
 ## Microsoft Excel からの印刷時に透かしを付ける方法 {#enable-watermark-for-printing-in-microsoft-excel}
 
-Windows のレジストリ設定を変更して、既存のヘッダーとフッターに動的透かしを共存させることができます。 レジストリ設定では、印刷中にのみ透かしが有効になります。レジストリを更新し、透かしを有効にするには、次の手順を実行します。
+Windows レジストリ設定を変更して、既存のヘッダーとフッターに動的透かしを共存させることができます。レジストリ設定では、印刷中にのみ透かしが有効になります。次の手順を実行して、レジストリを更新し、印刷中に透かしを有効にします。
 
-1. 変更を加える前に、Windows レジストリのバックアップを作成します。 詳しい手順については、[Windows レジストリを変更する方法](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)を参照してください。
+1. 変更する前に、Windows レジストリのバックアップを作成します。詳しい手順については、[Windows レジストリを変更する方法](https://learn.microsoft.com/ja-jp/troubleshoot/windows-server/performance/windows-registry-advanced-users)を参照してください。
 1. レジストリエディタで、HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 または HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 を開きます。
 1. 新しいレジストリキー **WatermarkMode** を作成します。
-1. WatermarkMode レジストリ キーで、DWORD **WatermarkMode** を作成し、DWORD **WatermarkMode** の値を **1** に設定します。
+1. WatermarkMode レジストリキーで、DWORD **WatermarkMode** を作成し、DWORD **WatermarkMode** の値を「**1**」に設定します。
 
 1. レジストリエディターを終了します。
 
@@ -282,11 +282,11 @@ Windows のレジストリ設定を変更して、既存のヘッダーとフッ
 
 ## ドキュメントにカスタム表紙を追加する方法 {#coverpage}
 
-ユーザーは、AEM Document Security for Microsoft Office プラグイン がインストールされていないマシンで保護されたドキュメントを開こうとする可能性があります。 このような PC では、ドキュメントを開くことができませんが、AEM Document Security for Microsoft Office プラグインのダウンロード方法などの情報を含む表紙を表示させることができます。
+AEM Document Security for Microsoft Office プラグインがインストールされていないマシン上でも、保護されたドキュメントをユーザーが開こうとする可能性があります。このような PC では、ドキュメントを開くことができませんが、AEM Document Security for Microsoft Office プラグインのダウンロード方法などの情報を含む表紙を表示させることができます。
 
 ### 表紙を構成する前に、以下の事項を実行または確認します。 {#before-you-configure-a-cover-page}
 
-* CommonResources.dll ファイルのバックアップを作成します。 デフォルトのパス：
+* CommonResources.dll ファイルのバックアップを作成する。デフォルトのパス：
 
    * **（32 ビット版の Office または 32 ビット版の PC の場合）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
@@ -301,7 +301,7 @@ Windows のレジストリ設定を変更して、既存のヘッダーとフッ
 
 ### CommonResources.dll ファイルの構成 {#structure-of-the-commonresources-dll-file}
 
-CommonResources.dll ファイルには、リソーステンプレートに関する情報が含まれています。TEMPLATE_FILE と RT_MANIFEST の 2 つの名前識別子が含まれています。 カスタム表紙を使用可能にするには、TEMPLATE_FILE の名前識別子を変更します。TEMPLATE_FILE の名前識別子には 6 個のリソースがあります。
+CommonResources.dll ファイルには、リソーステンプレートに関する情報が含まれています。TEMPLATE_FILE と RT_MANIFEST の 2 つの名前識別子が含まれています。カスタム表紙を使用可能にするには、TEMPLATE_FILE の名前識別子を変更します。TEMPLATE_FILE の名前識別子には 6 個のリソースがあります。
 
 <table>
  <tbody>
@@ -342,7 +342,7 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
 
    >[!NOTE]
    >
-   >ファイルが「Solution Explorer」ウィンドウに表示されない場合は、「ファイルを開くプログラム名」オプションを使用してファイルを再度開きます。 リソースエディターをエディターとして選択します。
+   >「Solution Explorer」ウィンドウにファイルが表示されない場合は、「ファイルを開く」オプションからファイルを再度開きます。リソースエディターをエディターとして選択します。
 
 1. 「Solution Explorer」のウィンドウで TEMPLATE_FILE ディレクトリを展開し、リソース「101」を削除します。
 
@@ -351,7 +351,7 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
    1. Solution Explorer でプロジェクトを選択し、「プロジェクト」メニューから「プロパティ」をクリックします。
    1. 「リソース」タブを選択します。
    1. 「リソースデザイナー」のツールバーで「リソースの追加」にマウスオーバーし、矢印をクリックします。リソースのタイプに「TEMPLATE_FILE」を選択し、「インポート」をクリックします。
-   1. **`Add existing file to resources`** ダイアログ ボックスで、リソース.xlsx ファイルを参照し、[開く] をクリックします。ファイルが「TEMPLATE_FILE」ディレクトリに追加されます。
+   1. **`Add existing file to resources`** ダイアログボックスで、Resource.xlsx ファイルを参照し、「開く」をクリックします。ファイルが「TEMPLATE_FILE」ディレクトリに追加されます。
 
    >[!NOTE]
    >
@@ -361,19 +361,19 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
 
    >[!NOTE]
    >
-   >リソースタイプを削除して、ランダムな順序で追加しないでください。 例えば、101 の後には 102 が来る必要があります。
+   >リソースタイプを削除および追加する場合は、順番を維持してください。例えば、101 の後には 102 を設定する必要があります。
 
 ### AEM Document Security extension for Microsoft Office のインストーラーにカスタム CommonResources.dll ファイルをパッケージ化する方法  {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
-CommonResources.dll ファイルをカスタマイズして、カスタム表紙を追加できます。 ファイルをカスタマイズした後は、すべてのワークステーション上で元のファイルを手動でカスタムファイルに置き換えるか、あるいは自動化された方法でファイルを置き換えることができます。
+CommonResources.dll ファイルをカスタマイズして、カスタムの表紙を追加できます。ファイルをカスタマイズした後は、すべてのワークステーション上で元のファイルを手動でカスタムファイルに置き換えるか、あるいは自動化された方法でファイルを置き換えることができます。
 
-大規模な環境では、手動でデフォルト `CommonResources.dll file` をカスタム `CommonResources.dll` ファイルに置き換えるのは困難であり、面倒です。 自己解凍パッケージツール（WinZip Self-Extractor など）を使用することで、カスタムの CommonResources.dll ファイルを AEM Document Security Extension for Microsoft Office インストーラーにパッケージ化することができます。パッケージ化した後は、カスタムインストーラーをすべてのワークステーションに配布することができます。この方法により、デフォルトの `CommonResources.dll` ファイルをカスタムファイルで置き換えるのに必要な時間を短縮できます。また、必要な CommonResources.dll ファイルをすべてのワークステーションに確実に提供する上でも役立ちます。自己解凍のパッケージングツールは、ファイルを自動的に置き換える様々な方法の 1 つにすぎません。お使いの環境に適した任意の方法を選択できます。
+大規模な環境では、デフォルト `CommonResources.dll file` をカスタム `CommonResources.dll` ファイルに手動で置き換えることは困難で大変な作業です。自己解凍パッケージツール（WinZip Self-Extractor など）を使用することで、カスタムの CommonResources.dll ファイルを AEM Document Security Extension for Microsoft Office インストーラーにパッケージ化することができます。パッケージ化した後は、カスタムインストーラーをすべてのワークステーションに配布することができます。この方法により、デフォルトの `CommonResources.dll` ファイルをカスタムファイルで置き換えるのに必要な時間を短縮できます。また、必要な CommonResources.dll ファイルをすべてのワークステーションに確実に提供する上でも役立ちます。自己解凍のパッケージングツールは、ファイルを自動的に置き換える様々な方法の 1 つにすぎません。お使いの環境に適した任意の方法を選択できます。
 
 AEM Document Security extension for Microsoft Office のインストーラーにカスタムの `CommonResources.dll`ファイルをパッケージ化するには、次の手順を実行します。
 
-1. 自己解凍型のパッケージツール（例えば、WinZip Self-Extractor などです。
+1. 自己解凍型のパッケージツール（例：WinZip Self-Extractor など）をインストールします。
 1. 新しいフォルダーを作成します。例えば、「YOUR_FOLDER_NAME」と名前を付けます。
-1. AEM Document Security 拡張 の元のインストーラーとカスタム CommonResources.dll ファイルを、新しく作成したフォルダーに配置します。
+1. 新しく作成されたフォルダーに、AEM Document Security Extension とカスタムの CommonResources.dll ファイルの元のインストーラーを配置します。
 1. フォルダー内にバッチファイルを作成します。例えば、「YOUR_FOLDER_NAME\Installer.bat」と名前を付けます。
 1. 編集用のバッチファイルを開き、次のコードをバッチファイルに追加します。
 
@@ -408,30 +408,30 @@ AEM Document Security extension for Microsoft Office のインストーラーに
     endlocal
    ```
 
-   LiveCycle Rights Management ES4 およびバージョン 11.0.0 以外のバージョンの LiveCycle または AEM Forms を JEE で使用する場合は、レジストリ キーのパスを次のように置き換えます。
+   JEE 上で LiveCycle Rights Management ES4 およびバージョン 11.0.0 以外の LiveCycle または AEM Forms を使用している場合は、レジストリキーのパスを次のように置き換えます。
 
-   * （LiveCycle®Rights ManagementES2 およびバージョン 9.0）: *HKLM\SOFTWARE\Adobe/LiveCycle* *Rights ManagementES2\9.0 *
-   * （LiveCycle®Rights Management ES3 およびバージョン 10.0）
-   * （LiveCycle®Rights Management ES4 およびバージョン 11.0） HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
-   * （JEE 上のAEM 6.0 Formsおよびそれ以降のバージョン） HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
+   * （LiveCycle® Rights Management ES2 およびバージョン 9.0 の場合）：*HKLM\SOFTWARE\Adobe/LiveCycle* *Rights Management ES2\9.0 *
+   * （LiveCycle® Rights Management ES3 およびバージョン 10.0 の場合）
+   * （LiveCycle® Rights Management ES4 およびバージョン 11.0 の場合）HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
+   * （AEM 6.0 Forms on JEE 以降の場合）HKLM\SOFTWARE\Adobe\LiveCycle Rights Management ES4\11.0.0
 
 1. 上記のコードでは、YOUR_FOLDER_NAME のインスタンスをすべて、手順 2 で作成したフォルダー名に置き換えます。
-1. **（「.exe」の拡張子を持つ、AEM Document Security Extension for Microsoft Office のインストーラーのみ）** 次のコード行：
+1. **（.exe の拡張子を持つ、AEM Document Security Extension for Microsoft Office のインストーラーのみ）** 次のコード行を置き換えます。
 
    `msiexec /i YOUR_FOLDER_NAME\MSI_NAME.msi`を次のタグに置換します。
 
    `START /w YOUR_FOLDER_NAME\APPLICATION_NAME.exe`
 
 1. バッチファイルを保存して閉じます。
-1. 自己解凍型のパッケージツールを使用して、以下を含むフォルダーをパッケージ化します。
+1. 自己解凍型のパッケージ作成ツールを使用して、次を含むフォルダーにまとめ、パッケージ化します。
 
-   * カスタム CommonResources.dll ファイル
-   * AEM Document Security extension for Microsoft Office の元のインストーラー
-   * および、バッチファイル
+   * カスタムの CommonResources.dll ファイル
+   * AEM Document Security Extension for Microsoft Office の元のインストーラー
+   * およびバッチファイル
 
    >[!NOTE]
    >
    >自己解凍パッケージが管理者として実行されるように設定されていて、
-   >抽出完了時にバッチファイルを実行します。
+   >解凍の完了時にバッチファイルを自動的に実行することを確認します。
 
-AEM Document Security Extension for Microsoft Office の自己解凍型インストーラーにカスタムの CommonResources.dll ファイルがパッケージ化され、配布準備が整いました。
+これで、カスタムの CommonResources.dll ファイルを含む AEM Document Security Extension for Microsoft Office パッケージの自己解凍インストーラーが完成し、配布準備が整いました。

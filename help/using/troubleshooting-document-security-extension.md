@@ -8,9 +8,9 @@ topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
 source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 49%
 
 ## インストールと設定に関する問題のトラブルシューティング {#troubleshootinginstallationandconfiguration}
 
-AEM Document Security Extension for Microsoft Office のインストールや設定で問題が発生した場合は、「[ インストール ](installing-configuring-aemdsext.md)」の「– インストールする前に –」セクションに記載されている手順に慎重に従ってください。
+AEM Document Security Extension for Microsoft Office をインストールまたは設定する際に問題が発生した場合は、[インストール](installing-configuring-aemdsext.md)記事のインストールの前にの節に記載されている手順に注意深く従っていることを確認します。
 
-ドキュメントに従ってすべてをインストールして設定した場合は、以下の節で、発生している問題と同様の問題について確認してください。
+インストールおよび設定をすべてドキュメントどおりに行っている場合は、次の節を参照して、発生している問題に類似の問題があるか確認します。
 
-### Document Security Extension for Microsoft Office が起動に失敗する {#document-security-extension-fails-to-load-for-microsoft-office-applications}
+### Document Security Extension が Microsoft Office アプリケーションの読み込みに失敗する {#document-security-extension-fails-to-load-for-microsoft-office-applications}
 
-Windows レジストリの LoadBehavior プロパティは、Document Security プラグイン実行時の動作を指定します。 LoadBehavior プロパティを 3 に設定すると、すべてのプラグインを自動的に読み込みます。Microsoft Office 用 Document Security 拡張機能をインストールする前に、値 LoadBehavior プロパティが 3 に設定されていることを確認します。
+Windows レジストリの LoadBehavior プロパティは、Document Security プラグイン実行時の動作を指定します。LoadBehavior プロパティを 3 に設定すると、すべてのプラグインを自動的に読み込みます。Document Security Extension for Microsoft Office をインストールする前に、LoadBehavior プロパティの値が 3 に設定されていることを確認してください。
 
-1. 変更を加える前に、Windows レジストリのバックアップを作成します。 詳しい手順については、[Windows レジストリを変更する方法](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)を参照してください。
+1. 変更する前に、Windows レジストリのバックアップを作成します。詳しい手順については、[Windows レジストリを変更する方法](https://learn.microsoft.com/ja-jp/troubleshoot/windows-server/performance/windows-registry-advanced-users)を参照してください。
 1. レジストリエディターを開き、HKEY_CURRENT_USER\Software\Microsoft\Office\Word\Addins\Adobe.DRMIntegration.WordAddin または HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Word\Addins\Adobe.DRM に移動します。
 1. **LoadBehavior** プロパティの値を 3 に設定します。
 
 1. レジストリエディターを終了します。
 
-LoadBehavior の詳細については、[VSTO アドインのレジストリエントリ](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&amp;redirectedfrom=MSDN#LoadBehavior)の記事を参照してください。
+LoadBehavior の詳細については、[VSTO アドインのレジストリエントリ](https://learn.microsoft.com/ja-jp/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&amp;redirectedfrom=MSDN#LoadBehavior)の記事を参照してください。
 
 ## 管理タスクのトラブルシューティング {#admintasks}
 
@@ -40,4 +40,4 @@ LoadBehavior の詳細については、[VSTO アドインのレジストリエ�
 
 ### Document Security Extension をインストールした後、Microsoft Office アプリケーションがスムーズに起動しなくなった {#microsoft-office-applications-dont-start-smoothly-on-installing-document-security-extension}
 
-Document Security Extension がインストールされ、McAfee VirusScan で On-Access Scan が有効な状態で Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console で「Buffer Overflow Protection」を無効にします。
+Document Security Extension がインストールされ、McAfee VirusScan の On-Access Scan 機能が有効になっている状態で Office アプリケーションをスムーズに起動するには、McAfee VirusScan Console の「Buffer Overflow Protection」を無効にします。
