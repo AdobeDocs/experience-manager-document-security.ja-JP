@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
-source-wordcount: '2821'
-ht-degree: 100%
+source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
+workflow-type: tm+mt
+source-wordcount: '2845'
+ht-degree: 97%
 
 ---
 
@@ -54,10 +54,13 @@ AEM Document Security Extension for Microsoft Office は、Microsoft Office ア�
 
 Document Security Extension のインストールに最低限必要なシステム構成は次のとおりです。
 
-* 32 ビット版または 64 ビット版の Microsoft Windows 7 または Windows 10 英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
+* Microsoft Windows 11 上の 32 ビット版または 64 ビット版のMicrosoft Office 2019 Professional Plus （英語、フランス語、ドイツ語、日本語、イタリア語、スペイン語、ポルトガル語（ブラジル）、韓国語、簡体字中国語、または繁体字中国語）。
+
+* 32 ビット版または 64 ビット版のMicrosoft Windows 10 （英語、フランス語、ドイツ語、日本語、イタリア語、スペイン語、ポルトガル語（ブラジル）、韓国語、簡体字中国語、または繁体字中国語）。
+
   **注：** *Document Security Extension for Microsoft Office は Microsoft Surface シリーズのデバイスでも動作すると想定されます。*
 
-* 32 ビット版または 64 ビット版の Office 2013、2016、2019 および Office 365 の一部としてインストールされた Microsoft Office デスクトップ用アプリケーションの英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
+* 32 ビット版または 64 ビット版の Office 2016、2019、および Office 365 の一部としてインストールされたMicrosoft Office デスクトップアプリケーション （英語、フランス語、ドイツ語、日本語、イタリア語、スペイン語、ポルトガル語（ブラジル）、韓国語、中国語（簡体字）または中国語（繁体字）のいずれか）。
 
   **メモ**：*AEM Document Security Extension for Microsoft Office は Microsoft Office アプリケーション向けのサードパーティ製プラグインをサポートしていません。この拡張機能はサードパーティプラグインと競合する場合があるため、Document Security Extension for Microsoft Office をインストールする前に、アドビ製以外の Microsoft Office アプリケーション用プラグインをアンインストールする必要があります。サードパーティ製プラグインがインストールされている場合、アドビでは、Document Security Extensions for Microsoft Office アプリケーションのサポートを提供できません。*
 
