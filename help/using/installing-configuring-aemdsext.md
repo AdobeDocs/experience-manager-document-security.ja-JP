@@ -254,7 +254,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 * 新規ドキュメントをユーザーが作成し編集して保存するとき
 * 保護されていないドキュメントをユーザーが開き編集して保存するとき
 
-自動適用ポリシーの設定については、[ デフォルトポリシーの自動適用の設定 ](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p) を参照してください。
+自動適用ポリシーの設定については、[&#x200B; デフォルトポリシーの自動適用の設定 &#x200B;](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p) を参照してください。
 
 ## リボンを使用しないユーザーインターフェイスの有効化 {#enable-ribbon-less-user-interface}
 

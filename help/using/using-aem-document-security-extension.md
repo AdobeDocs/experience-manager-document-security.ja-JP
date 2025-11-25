@@ -342,12 +342,12 @@ Document Security Web ページでポリシーの作成に使用できるポリ�
    サーバーでの認証方法としてユーザー名とパスワードを選択し、Document Security のログイン情報をまだ提供していない場合は、ユーザー名とパスワードの入力を求めるダイアログボックスが表示されます。
 
 1. リストのポリシーを選択して、「**適用**」をクリックします。
-1.  ファイルを保存します。
+1. ファイルを保存します。
 
 #### 最近使用したポリシーの適用 {#apply-a-recently-used-policy}
 
 1. Document Security Extension for Microsoft® Office 2010 および 2013 の「**Document Security**」タブで、**保護**／*[ポリシー名]*&#x200B;を選択します。
-1.  ファイルを保存します。
+1. ファイルを保存します。
 
 ## ポリシーで保護されたファイルの操作 {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
