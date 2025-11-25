@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: ht
-source-wordcount: '6136'
-ht-degree: 100%
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
+source-wordcount: '6139'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ AEM Forms Document Security で、サードパーティ認証プロバイダー�
 1. AEM Forms の管理 UI を開きます。
 1. サービス／Document Security／設定／サーバー設定に移動します。
 1. 「拡張認証を許可」オプションを有効にします。
-1. デフォルト拡張認証ランディングページ URL を指定します。デフォルト URL は http://localhost:8080/edc/extendedauthentication/welcome.jsp です。
+1. デフォルト拡張認証ランディングページ URL を指定します。デフォルトの URL はhttp://localhost:8080/edc/extendedauthentication/welcome.jspです。
 
    「**[!UICONTROL 保存]**」をクリックします。
 
@@ -373,7 +373,7 @@ Document Security Extension for Microsoft® Office では、ファイル発行�
 
 他のファイルを開くときと同様の方法を使用して、ポリシーで保護されたファイルを開くことができます。Document Security にまだログインしていない場合は、ログインするように求められます。つまり、インターネットに接続していない場合は、ファイルをオフラインで開くことができます。ログイン処理をキャンセルすると、アクセスは拒否されます。
 
-ファイルを開く権限がない場合は、アクセスが拒否されたことが通知されます。また、ファイルのアクセス権限が失効した場合、更新版のファイルがあれば、そのファイルにアクセスすることもできます。ポリシーで保護されたファイルを開くことができない場合、対応方法についてはファイルの発行者にお問い合わせください。
+ファイルを開く権限がない場合は、アクセスが拒否されたことが通知されます。ファイルへのアクセス権限が取り消されている場合は、ファイルの更新バージョンがある場合は、そのバージョンに移動することもできます。 ポリシーで保護されたファイルを開くことができない場合、対応方法についてはファイルの発行者にお問い合わせください。
 
 保護されたファイルを開くと、タイトルバーのファイル名の後に、ファイルが AEM Document Security で保護されていることを示すテキストが表示されます。
 
@@ -409,11 +409,11 @@ Microsoft Office® 2010 用 Document Security 拡張機能では、「Document S
 
 管理者がポリシーの自動適用機能を有効にしている場合、作成または編集したドキュメントは、ドキュメントを保存すると自動的に保護されます。
 
-ポリシーの自動適用機能が有効になっている場合、Document Security Extension for Microsoft® Office から Document Security サーバーにログインするように求められます。サーバーがユーザーを認証できるように、ユーザー名とパスワードを入力します。正しいログイン資格情報を入力した場合は、ドキュメントは保存され保護されます。
+自動適用ポリシーが有効になっている場合、Document Security Extension for Microsoft® Office から Document Security サーバーにログインするように求められます。 サーバーがユーザーを認証できるように、ユーザー名とパスワードを入力します。正しいログイン資格情報を入力した場合は、ドキュメントは保存され保護されます。
 
 >[!NOTE]
 >
->Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。どちらになるかは、管理者がポリシー自動適用をどのように設定したかによって決まります。この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
+>Document Security にログインできない場合は、ドキュメントが保存されるときと、保存されないときがあります。この状況は、管理者が自動適用ポリシーをどのように設定したかによって異なります。 この状況でのドキュメントの処理方法については、管理者にお問い合わせください。
 
 ### オフラインアクセスの同期 {#synchronizing-for-offline-access}
 

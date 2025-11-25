@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,7 @@ Document Security Extension のインストールに最低限必要なシステ�
 
 * 32 ビット版または 64 ビット版の Microsoft Windows 11 上の Microsoft Office 2019 Professional Plus 英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
 
-* 32 ビット版または 64 ビット版の Microsoft Windows 10 英語版、フランス語版、ドイツ語版、日本語版、イタリア語版、スペイン語版、ポルトガル語（ブラジル）版、韓国語版、中国語（簡体字）版または中国語（繁体字）版。
+* 32 ビット版または 64 ビット版のMicrosoft Windows 10 （英語、フランス語、ドイツ語、日本語、イタリア語、スペイン語、ブラジル語、ポルトガル語、韓国語、簡体字中国語、繁体字中国語）。
 
   **メモ：** *Document Security Extension for Microsoft Office は Microsoft Surface シリーズのデバイスでも動作すると想定されます。*
 
@@ -182,13 +182,13 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 * すべてのドキュメントをデフォルトポリシーで保護する。
 * サーバーに接続できない場合は、保護されない形式でユーザーがファイルを保存できるようにする。このような柔軟性があれば、ネットワークとの接続が切断されている間（例えば、飛行機に搭乗している間など）にユーザーがドキュメントを作成している場合にも対応できます。
 
-ポリシー自動適用機能を有効にすると、ドキュメントは次の場合にデフォルトポリシーで保護されます。
+自動適用ポリシー機能を有効にすると、次の場合にドキュメントがデフォルトポリシーで保護されます。
 
 * 新しく作成したドキュメントをユーザーが編集して保存する場合
 * 保護されていないドキュメントをユーザーが編集して保存する場合
 * ドキュメントをデフォルトの状態で開くアプリケーションをユーザーが起動し、ドキュメントを編集して保存する場合
 
-### MSI ファイルでのポリシー自動適用機能の設定 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### MSI ファイルでの自動適用ポリシー機能の設定 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 操作を開始する前に、この記事で前述したように、LiveCycle サーバーまたは AEM Forms サーバーを指すようにインストーラーを事前設定します。
 
@@ -209,12 +209,12 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>ポリシー自動適用機能を有効または無効にします。</p> <p><code>1</code>：有効</p> <p>0：無効</p> </td>
+   <td><p>自動適用ポリシー機能を有効または無効にします。</p> <p><code>1</code>：有効</p> <p>0：無効</p> </td>
    <td><p>0</p> </td>
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>ポリシーは、新しいドキュメントを保存するときに使用する GUID です。この値はポリシー自動適用機能に適用されます。</p> </td>
+   <td><p>ポリシーは、新しいドキュメントを保存するときに使用する GUID です。この値は、自動適用ポリシー機能に適用されます。</p> </td>
    <td><p>RM サーバーに表示される 16 進数のポリシー ID</p> </td>
   </tr>
   <tr>
@@ -245,16 +245,16 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
    >
    >一般的には、元の MSI ファイルと同じファイル名（例：`DocumentSecurityExtensionforMicrosoftOffice.msi`）を使用します。
 
-## 新しいドキュメントの自動保護の有効化 {#enabling-automatic-protection-of-new-documents}
+## 新しいドキュメントの自動保護を有効にする {#enabling-automatic-protection-of-new-documents}
 
-管理者は、ユーザーが保存するドキュメントを自動的に保護する機能を有効にできます。Document Security Extension for Microsoft Office のインストールプログラムでポリシー自動適用機能を設定します。
+管理者は、ユーザーが保存するドキュメントを自動的に保護する機能を有効にできます。管理者は、Document Security Extension for Microsoft Office のインストールプログラムで「自動適用ポリシー」機能を設定します。
 
-ポリシー自動適用を有効にすると、ユーザーが保存するすべてのドキュメントがデフォルトポリシーで保護されます。この操作は次のような状況で実行します。
+自動適用ポリシーが有効になっている場合、ユーザーが保存したすべてのドキュメントはデフォルトのポリシーで保護されます。 この操作は次のような状況で実行します。
 
 * 新規ドキュメントをユーザーが作成し編集して保存するとき
 * 保護されていないドキュメントをユーザーが開き編集して保存するとき
 
-ポリシー自動適用の設定について詳しくは、[デフォルトポリシーの自動適用の設定](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)を参照してください。
+自動適用ポリシーの設定については、[ デフォルトポリシーの自動適用の設定 ](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p) を参照してください。
 
 ## リボンを使用しないユーザーインターフェイスの有効化 {#enable-ribbon-less-user-interface}
 

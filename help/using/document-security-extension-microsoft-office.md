@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Document Security Extension for Microsoft® Office は、Adobe Experience Manage
 
 ドキュメントセキュリティにより、許可されたユーザーだけが、知的財産を含んだファイルを使用できるようになります。Document Security を利用すると、機密ポリシーを使用してファイルを保護できます。*ポリシー*&#x200B;は、機密設定と、許可されたユーザーの一覧を含む、情報のコレクションです。ポリシーを適用したファイルを受信者がどのように使用できるかは、ポリシーで指定した設定で決まります。例えば、受信者がテキストの印刷やコピー、変更内容の保存を行えるかどうかを指定できます。
 
-ポリシーを作成するのは Document Security 管理者およびユーザーです。管理者は、許可されたすべてのユーザーが使用できる組織ポリシーを作成します。管理者またはポリシー設定コーディネータは、ユーザーのサブセットで使用できる&#x200B;*ポリシーセット*&#x200B;と呼ばれるポリシーグループを作成することもできます。ユーザーは自分だけが使える独自のポリシーを作成できます。管理者、ポリシー設定コーディネーター、ユーザーは、Document Security web ページを使用してポリシーを作成します。
+ポリシーを作成するのは Document Security 管理者およびユーザーです。管理者は、許可されたすべてのユーザーが使用できる組織ポリシーを作成します。管理者またはポリシー設定コーディネータは、ユーザーのサブセットで使用できる&#x200B;*ポリシーセット*&#x200B;と呼ばれるポリシーグループを作成することもできます。ユーザーは自分だけが使える独自のポリシーを作成できます。管理者、ポリシーセットコーディネーター、ユーザーは、Document Security web ページを使用してポリシーを作成します。
 
 ポリシーは Document Security に保存されますが、Word、Excel、PowerPoint のいずれかを使用してファイルに適用できます。ファイルにポリシーを適用すると、そのファイルに含まれている情報が、ポリシーで指定された機密設定により保護されます。ポリシーで保護されたファイルを配布すると、許可された受信者のみがそのコンテンツにアクセスできます。
 
@@ -50,7 +50,7 @@ Document Security Extension for Microsoft® Office は、Adobe Experience Manage
 * ポリシーで指定された有効期間内。
 * 管理者またはポリシーの適用者がファイルへのアクセスを無効にするか、ポリシーを変更するまで。
 
-  ポリシーの適用者がポリシーを変更するかファイルへのアクセスを無効にした場合、ユーザーが既にファイルを持っていても、そのファイルに対するユーザーの権限が変更または削除されます。ファイル自体が無効になっている場合は、最新のコピーを取得するための URL をユーザーに提供できます。
+  ポリシーの適用者がポリシーを変更するかファイルへのアクセスを無効にした場合、ユーザーが既にファイルを持っていても、そのファイルに対するユーザーの権限が変更または削除されます。ファイル自体が失効している場合は、更新されたコピーを取得するための URL をユーザーに提供できます。
 
   ポリシーでオフラインアクセスが許可されている場合、ユーザーは、指定されたオフラインリース期間中、インターネットまたはネットワーク接続がなくても、ポリシーで保護されたファイルを開くことができます。オフラインリース期間が終了したら、ユーザーはオンラインにして、Document Security と同期する必要があります。その結果、新しいリース期間が始まります。
 
@@ -82,7 +82,7 @@ Document Security Extension for Microsoft® Office は、Adobe Experience Manage
   </tr>
   <tr>
    <td><p>現在のバージョンに関するパッチアップデート、テクニカルノート、および追加情報</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/ja?support-solution=General&amp;support-tab=home&amp;lang=ja#support">Experience Cloud のテクニカルサポート</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=ja#support">Experience Cloud のテクニカルサポート</a></p> </td>
   </tr>
  </tbody>
 </table>
