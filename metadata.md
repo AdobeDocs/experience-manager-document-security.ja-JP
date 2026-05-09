@@ -1,38 +1,39 @@
 ---
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Forms
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8id: e8f6de9b-cf88-4405-8d10-15efa08c230e
 product: adobe experience manager
 type: Documentation
 feature-set: Experience Manager Forms
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-document-security.ja-JP
+git-repo: https://github.com/AdobeDocs/experience-manager-document-security.en
 index: true
 recommendations: noDisplay
-source-git-commit: 9a65d1d8ea89408fff1551afbcb1805f7cbdc5e6
+source-git-commit: 5bf50efa455b920583453aa8617757596d29545d
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: 153
 ht-degree: 1%
 
 ---
 
 
-# 内部使用のメタデータ
+# 内部使用のためのメタデータ
 
-metadata.md ファイルには、リポジトリでユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリレベルのメタデータが含まれています。 任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内で行います。
+metadata.md ファイルには、リポジトリ内のユーザーガイド TOC.md ファイルに渡されるリポジトレベルのメタデータが含まれています。 任意のユーザーガイドのmetadata.md コンテンツを変更する場合は、任意のTOC.md ファイルで変更します。
 
 | メタデータ | 機能 |
 |--- |--- |
-| solution-title | 記事ヘッダーでリンクとして使用されます |
-| solution-hub-url | helpx ハブページを開きます。 |
+| solution-title | 記事ヘッダーにリンクとして使用 |
+| solution-hub-url | helpx ハブページを開きます |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。 まだ実装されていません |
-| getting-started-url | helpx の「はじめに」のページへのリンク |
-| tutorials-url | ビデオチュートリアル（helpx チュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右側のパネルに表示される見出しレベルの数を決定します。 デフォルトは 2 です |
+| getting-started-url | Helpx入門ページへのリンク |
+| tutorials-url | ビデオチュートリアルへのリンク - helpx チュートリアルまたはKT チュートリアル |
+| ミニ目次レベル | 右側のパネルに表示される見出しレベルの数を指定します。 デフォルトは2です |
 | git-repo | 内部使用のプライマリリポジトリの場所を指定します |
 
-TOC.md ファイル内
+TOC.md ファイル
 
 | メタデータ | 機能 |
 |--- |--- |
-| user-guide-title | 記事ヘッダーでリンクとして使用されます |
-| user-guide-url | helpx ハブページを開きます。 |
+| user-guide-title | 記事ヘッダーにリンクとして使用 |
+| user-guide-url | helpx ハブページを開きます |
