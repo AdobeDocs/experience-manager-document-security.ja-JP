@@ -1,20 +1,28 @@
 ---
-title: Adobe Experience Manager Document Security／LiveCycle Rights Management Extension for Microsoft® Office のダウンロード
-description: Document Security Extension for Microsoft® Office ソフトウェアを使用して、重要なファイルを不正アクセスから保護する
+title: Adobe Experience Manager Document Security/LiveCycle Rights Management Extension for Microsoft&reg; Officeのダウンロード
+description: Microsoft&reg; Office ソフトウェア用Document Security Extensionを使用して、重要なファイルを不正アクセスから保護します
 uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
-source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+TQID: https://experienceleague.adobe.com/wWp81LlFGPn-20erOk0FoBilgFkdAlpHAjBqNsNL3nQ
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+workflow-type: tm+mt
+source-wordcount: 245
+ht-degree: 87%
 
 ---
 
 # Adobe Experience Manager Document Security／LiveCycle Rights Management Extension for Microsoft® Office のダウンロード {#download-adobe-experience-manager-document-security-livecycle-rights-management-extension-for-microsoft-office}
 
-Document Security Extension for Microsoft® Office ソフトウェアを使用すると、機密情報の機密性を維持できます。重要なファイルを不正アクセスから常に保護できます。この保護は、ドキュメントの作成から配布まで適用されます。また、ファイルの配布方法や保存場所に関係なく、アーカイブと破棄も含まれます。
+Document Security Extension for Microsoft® Office ソフトウェアを使用すると、機密情報の機密性を維持できます。 重要なファイルを不正アクセスから常に保護できます。 この保護は、ドキュメントの作成から配布まで適用されます。 また、ファイルの配布方法や保存場所に関係なく、アーカイブと破棄も含まれます。
 
 >[!NOTE]
 >
