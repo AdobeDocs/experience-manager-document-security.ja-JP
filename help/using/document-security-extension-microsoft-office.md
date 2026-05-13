@@ -93,7 +93,7 @@ Document Security Extension for Microsoft® Office は、Adobe Experience Manage
   </tr>
   <tr>
    <td><p>現在のバージョンに関するパッチアップデート、テクニカルノート、および追加情報</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&lang=ja&support-tab=home#support">Experience Cloud のテクニカルサポート</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/ja?support-solution=General&lang=ja&support-tab=home#support">Experience Cloud のテクニカルサポート</a></p> </td>
   </tr>
  </tbody>
 </table>
