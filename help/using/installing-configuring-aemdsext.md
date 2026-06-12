@@ -318,7 +318,7 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
 <table>
  <tbody>
   <tr>
-   <td><p><strong>リソース</strong></p> </td>
+   <td><p><strong>Resource</strong></p> </td>
    <td><p><strong>対応ファイル </strong></p> </td>
   </tr>
   <tr>
