@@ -7,14 +7,9 @@ topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 TQID: https://experienceleague.adobe.com/VeYp8E0Yyp4uOAx33B6YmQVUJfNFZOvIad97NopbKcM
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
 source-wordcount: 2933
@@ -263,7 +258,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 * 新規ドキュメントをユーザーが作成し編集して保存するとき
 * 保護されていないドキュメントをユーザーが開き編集して保存するとき
 
-自動適用ポリシーの設定について詳しくは、[&#x200B; デフォルトポリシーの自動アプリケーションの設定](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)を参照してください。
+自動適用ポリシーの設定について詳しくは、[ デフォルトポリシーの自動アプリケーションの設定](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)を参照してください。
 
 ## リボンを使用しないユーザーインターフェイスの有効化 {#enable-ribbon-less-user-interface}
 
@@ -318,7 +313,7 @@ CommonResources.dll ファイルには、リソーステンプレートに関す
 <table>
  <tbody>
   <tr>
-   <td><p><strong>リソース</strong></p> </td>
+   <td><p><strong>Resource</strong></p> </td>
    <td><p><strong>対応ファイル </strong></p> </td>
   </tr>
   <tr>
