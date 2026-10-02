@@ -9,19 +9,22 @@ exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 TQID: https://experienceleague.adobe.com/VeYp8E0Yyp4uOAx33B6YmQVUJfNFZOvIad97NopbKcM
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+    internal-label: Security
+source-git-commit: 97e24a5c1733b47777d7dcf165ceb3309bf41972
 workflow-type: tm+mt
-source-wordcount: 2933
+source-wordcount: '2933'
 ht-degree: 94%
-
 ---
-
 # AEM Document Security Extension for Microsoft Officeのインストールと設定{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 このドキュメントでは、Adobe Experience Manager Document Security Extension for Microsoft Office のインストールおよび設定手順を詳しく説明します。
@@ -209,44 +212,44 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 1. 企業向けにインストールされた Rights Management または Document Security に合わせて、以下のキー名の値を編集します。
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>キー名</strong></p> </td>
-   <td><p><strong>説明</strong></p> </td>
-   <td><p><strong>キ</strong><strong>ー</strong><strong>値のデフォルト</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>自動適用ポリシー機能を有効または無効にします。</p> <p><code>1</code>：有効</p> <p>0：無効</p> </td>
-   <td><p>0</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>ポリシーは、新しいドキュメントを保存するときに使用する GUID です。 この値は、自動適用ポリシー機能に適用されます。</p> </td>
-   <td><p>RM サーバーに表示される 16 進数のポリシー ID</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
-   <td><p>サーバーの URL。</p> </td>
-   <td><p>default.corp.com</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
-   <td><p>サーバーのポート番号。</p> </td>
-   <td><p>1234</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
-   <td><p>初回保存時にドキュメントを保護する目的でクライアントがサーバーに接続できない場合に、Document Security による保護なしでドキュメントを作成できるかどうかを指定します。</p> <p>1：保護されていない保存を許可する </p> <p>0：クライアントがドキュメントを保存するためにサーバーに接続できない場合は新しいドキュメントの作成を許可しない</p> </td>
-   <td><p>0</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><p><strong>キー名</strong></p> </td>
+      <td><p><strong>説明</strong></p> </td>
+      <td><p><strong>キ</strong><strong>ー</strong><strong>値のデフォルト</strong></p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
+      <td><p>自動適用ポリシー機能を有効または無効にします。</p> <p><code>1</code>：有効</p> <p>0：無効</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
+      <td><p>ポリシーは、新しいドキュメントを保存するときに使用する GUID です。 この値は、自動適用ポリシー機能に適用されます。</p> </td>
+      <td><p>RM サーバーに表示される 16 進数のポリシー ID</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
+      <td><p>サーバーの URL。</p> </td>
+      <td><p>default.corp.com</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
+      <td><p>サーバーのポート番号。</p> </td>
+      <td><p>1234</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
+      <td><p>初回保存時にドキュメントを保護する目的でクライアントがサーバーに接続できない場合に、Document Security による保護なしでドキュメントを作成できるかどうかを指定します。</p> <p>1：保護されていない保存を許可する </p> <p>0：クライアントがドキュメントを保存するためにサーバーに接続できない場合は新しいドキュメントの作成を許可しない</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` オプションは、ユーザーにすべてのドキュメントを保護するように強制する代わりに、そうするように喚起する場合に便利です。 また、このオプションは、ユーザーがネットワークから切断されているときにユーザーがドキュメントを作成したということを知ることができるので便利です。 ユーザーによるドキュメントの作成や保存は妨げないようにします。
+   >[!NOTE]
+   >
+   >`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` オプションは、ユーザーにすべてのドキュメントを保護するように強制する代わりに、そうするように喚起する場合に便利です。 また、このオプションは、ユーザーがネットワークから切断されているときにユーザーがドキュメントを作成したということを知ることができるので便利です。 ユーザーによるドキュメントの作成や保存は妨げないようにします。
 
 1. 変更したファイルを、元の MSI ファイルが格納されているのと同じディレクトリに保存します。
 
@@ -300,11 +303,11 @@ AEM Document Security for Microsoft Office プラグインがインストール�
 
 * CommonResources.dll ファイルのバックアップを作成する。 デフォルトのパス：
 
-   * **（32 ビット版の Office または 32 ビット版の PC の場合）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **（32 ビット版の Office または 32 ビット版の PC の場合）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **（32 ビット版の Office または 64 ビット版の PC の場合）** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **（32 ビット版の Office または 64 ビット版の PC の場合）** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **（64 ビット版の Office または 64 ビット版の PC の場合）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **（64 ビット版の Office または 64 ビット版の PC の場合）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
 * Microsoft Visual Studio 2008 以降がインストールされている。 他のユーティリティを使用して DLL ファイルを編集することもできます。
 * templates.zip アーカイブを解凍する。 アーカイブには、表紙の.xlsx、.docx、および .pptx テンプレートが含まれています。 .xlsx、.docx、および .pptx のファイル形式には、指定されたテンプレートのみを使用してください。 他のファイルタイプ用に独自のテンプレートを作成することもできます。 テンプレートをカスタマイズすることで、独自のメッセージや指示を含めることができます。 template.zip は以下にあります。
